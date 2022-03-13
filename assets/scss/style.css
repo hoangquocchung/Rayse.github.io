@@ -17264,6 +17264,7 @@ blockquote .inner-content .user-name:before {
 /*----------------------------------------*/
 .product-area {
   background-color: #f5f5f5;
+  overflow: hidden;
 }
 
 @media (max-width: 479px) {
