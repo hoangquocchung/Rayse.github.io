@@ -129,7 +129,7 @@
         }
         > a {
           font-weight: 500;
-          color: #000000;
+          color: #ffffff;
           display: flex;
           align-items: center;
           padding-top: 15px;
@@ -311,6 +311,10 @@
         i {
           font-size: 23px;
           vertical-align: middle;
+          color: $white;
+        }
+        i.col {
+          color: #f04b4c;
         }
       }
       .minicart {
@@ -335,7 +339,7 @@
     .btn {
       display: flex;
       i {
-        color: $dark;
+        color: $white;
         font-size: 24px;
         &.col {
           color: #f04b4c;

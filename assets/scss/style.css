@@ -15949,7 +15949,7 @@ blockquote .inner-content .user-name:before {
 
 .main-nav > ul > li > a {
   font-weight: 500;
-  color: #000000;
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16162,6 +16162,11 @@ blockquote .inner-content .user-name:before {
 .header-right > ul > li > a i {
   font-size: 23px;
   vertical-align: middle;
+  color: #fff;
+}
+
+.header-right > ul > li > a i.col {
+  color: #f04b4c;
 }
 
 .header-right > ul > li .minicart-btn .quantity {
@@ -16186,7 +16191,7 @@ blockquote .inner-content .user-name:before {
 }
 
 .header-right > ul .btn i {
-  color: #212529;
+  color: #fff;
   font-size: 24px;
 }
 
@@ -18058,8 +18063,9 @@ blockquote .inner-content .user-name:before {
 }
 
 .blog-content .title {
-  font-size: 24px;
+  font-size: 16px;
   line-height: 1.4;
+  text-align: center;
 }
 
 @media (max-width: 479px) {
