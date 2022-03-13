@@ -1,0 +1,145 @@
+/*----------------------------------------*/
+/*  06. Banner
+/*----------------------------------------*/
+.elementor-cta__bg-overlay {
+  background-color: rgba(9, 9, 9, 0.349);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.banner {
+  &-area {
+    padding-top: 25px;
+    padding-bottom: 35px;
+    @media (min-width: 920px) {
+      padding-top: 35px;
+    }
+    @media (min-width: 1200px) {
+      padding-top: 70px;
+    }
+  }
+  &-img {
+    position: relative;
+    .inner-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      width: 100%;
+      .offer {
+        font-size: 18px;
+        line-height: 33px;
+        color: #fc1414;
+      }
+      h4 {
+        color: $primary;
+        font-size: 40px;
+        font-weight: 600;
+        -webkit-text-stroke: 1px #fff;
+      }
+      .button {
+        &-wrap {
+          font-size: 19px;
+          font-weight: 500;
+          text-transform: uppercase;
+          a {
+            border: 2px solid #fff;
+          }
+        }
+      }
+    }
+    .elementor-cta__bg-overlay {
+      background-color: #0909093b;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+    }
+  }
+  &-style {
+    &-2 {
+      text-align: center;
+      .banner {
+        &-content {
+          .sub-title {
+            margin-bottom: 20px;
+            display: block;
+          }
+          .title {
+            font-size: 46px;
+            line-height: 1.2;
+            @include media-breakpoint-only(lg) {
+              max-width: 670px;
+              margin: 0 auto;
+            }
+            @include media-breakpoint-down(md) {
+              font-size: 30px !important;
+            }
+          }
+          .price-box {
+            span {
+              font-family: "Playfair Display", serif;
+              font-size: 30px;
+              line-height: 33px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include media-breakpoint-only(md) {
+    &-with-parallax {
+      .parallax-img-wrap {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        .papaya {
+          margin-left: -30px;
+        }
+      }
+    }
+  }
+}
+
+/* ---Banner With Category--- */
+.product {
+  &-category {
+    &-item {
+      ul {
+        display: flex;
+        @include media-breakpoint-down(lg) {
+          flex-wrap: wrap;
+          margin-bottom: -30px;
+        }
+        li {
+          display: inline-block;
+          text-align: center;
+          padding-right: 75px;
+          @include media-breakpoint-down(lg) {
+            padding-bottom: 25px;
+            width: 33.33333%;
+          }
+          @include media-breakpoint-down(sm) {
+            padding-right: 25px;
+          }
+          @media (max-width: 479px) {
+            width: 50%;
+          }
+          &:not(:last-child) {
+            @include media-breakpoint-up(lg) {
+              padding-right: 75px;
+            }
+          }
+          a {
+            img {
+              margin-bottom: 25px;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
