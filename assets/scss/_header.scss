@@ -134,13 +134,14 @@
           align-items: center;
           padding-top: 15px;
           padding-bottom: 15px;
-          font-size: 15px;
+          font-size: 16px;
+          text-transform: uppercase;
           i {
             margin-left: 5px;
             font-size: 10px;
           }
           &.col {
-            color: #f04b4c;
+            color: #000000;
             transition: 0.5s;
           }
         }
@@ -149,6 +150,9 @@
             top: 100%;
             opacity: 1;
             visibility: visible;
+          }
+          > a {
+            color: $primary;
           }
         }
       }
@@ -173,8 +177,8 @@
     transition: $baseTransition;
     width: 250px;
     padding-left: 30px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     text-align: left;
     z-index: 2;
     @include media-breakpoint-down(xl) {
@@ -267,7 +271,7 @@
           }
           &:hover {
             background-color: #f8f9fa;
-            color: #000000;
+            color: $primary;
           }
         }
       }
@@ -313,8 +317,12 @@
           vertical-align: middle;
           color: $white;
         }
+
         i.col {
-          color: #f04b4c;
+          color: #000000;
+        }
+        &:hover i {
+          color: $primary;
         }
       }
       .minicart {
@@ -342,12 +350,15 @@
         color: $white;
         font-size: 24px;
         &.col {
-          color: #f04b4c;
+          color: #000;
           transition: 0.5s;
         }
       }
       &:after {
         border: 0;
+      }
+      &:hover i {
+        color: $primary;
       }
     }
   }

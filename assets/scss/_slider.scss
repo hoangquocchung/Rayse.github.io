@@ -30,7 +30,7 @@
       font-weight: 400;
       color: transparent;
       -webkit-text-stroke: 2px #ffffff;
-
+      color: #ffa127;
       @include media-breakpoint-down(xl) {
         font-size: 50px;
         line-height: 75px;
@@ -55,7 +55,7 @@
       }
     }
     p {
-      color: #ffffff;
+      color: $primary;
     }
   }
 }

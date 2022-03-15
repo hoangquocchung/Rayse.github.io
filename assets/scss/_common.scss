@@ -248,11 +248,11 @@ img {
       font-size: 36px;
       position: relative;
       display: inline;
-      color: #213159;
+      color: $black;
       &::after {
         position: absolute;
         content: "";
-        background-color: #f04b4c;
+        background-color: $primary;
         width: 65px;
         height: 1px;
         top: 50%;
@@ -262,7 +262,7 @@ img {
       &::before {
         position: absolute;
         content: "";
-        background-color: #f04b4c;
+        background-color: $primary;
         width: 65px;
         height: 1px;
         top: 50%;
@@ -282,7 +282,7 @@ img {
       display: block;
       font-weight: 600;
       letter-spacing: 0.5px;
-      color: #f04b4c;
+      color: $primary;
     }
   }
 }

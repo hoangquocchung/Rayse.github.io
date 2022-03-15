@@ -15129,13 +15129,13 @@ img {
   font-size: 36px;
   position: relative;
   display: inline;
-  color: #213159;
+  color: #000;
 }
 
 .section-title .title::after {
   position: absolute;
   content: "";
-  background-color: #f04b4c;
+  background-color: #ffa127;
   width: 65px;
   height: 1px;
   top: 50%;
@@ -15147,7 +15147,7 @@ img {
 .section-title .title::before {
   position: absolute;
   content: "";
-  background-color: #f04b4c;
+  background-color: #ffa127;
   width: 65px;
   height: 1px;
   top: 50%;
@@ -15171,7 +15171,7 @@ img {
   display: block;
   font-weight: 600;
   letter-spacing: 0.5px;
-  color: #f04b4c;
+  color: #ffa127;
 }
 
 /* ---Custom Font Size--- */
@@ -15958,7 +15958,8 @@ blockquote .inner-content .user-name:before {
           align-items: center;
   padding-top: 15px;
   padding-bottom: 15px;
-  font-size: 15px;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 .main-nav > ul > li > a i {
@@ -15967,7 +15968,7 @@ blockquote .inner-content .user-name:before {
 }
 
 .main-nav > ul > li > a.col {
-  color: #f04b4c;
+  color: #000000;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -15976,6 +15977,10 @@ blockquote .inner-content .user-name:before {
   top: 100%;
   opacity: 1;
   visibility: visible;
+}
+
+.main-nav > ul > li:hover > a {
+  color: #ffa127;
 }
 
 /* ---Drop Menu--- */
@@ -15997,8 +16002,8 @@ blockquote .inner-content .user-name:before {
   transition: all 0.3s ease 0s;
   width: 250px;
   padding-left: 30px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   text-align: left;
   z-index: 2;
 }
@@ -16109,7 +16114,7 @@ blockquote .inner-content .user-name:before {
 
 .megamenu > li > ul li a:hover {
   background-color: #f8f9fa;
-  color: #000000;
+  color: #ffa127;
 }
 
 .megamenu > li .menu-slider {
@@ -16166,7 +16171,11 @@ blockquote .inner-content .user-name:before {
 }
 
 .header-right > ul > li > a i.col {
-  color: #f04b4c;
+  color: #000000;
+}
+
+.header-right > ul > li > a:hover i {
+  color: #ffa127;
 }
 
 .header-right > ul > li .minicart-btn .quantity {
@@ -16196,13 +16205,17 @@ blockquote .inner-content .user-name:before {
 }
 
 .header-right > ul .btn i.col {
-  color: #f04b4c;
+  color: #000;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 .header-right > ul .btn:after {
   border: 0;
+}
+
+.header-right > ul .btn:hover i {
+  color: #ffa127;
 }
 
 /* ---Header Logo--- */
@@ -16280,6 +16293,7 @@ blockquote .inner-content .user-name:before {
   font-weight: 400;
   color: transparent;
   -webkit-text-stroke: 2px #ffffff;
+  color: #ffa127;
 }
 
 @media (max-width: 1199.98px) {
@@ -16314,7 +16328,7 @@ blockquote .inner-content .user-name:before {
 }
 
 .slide-content p {
-  color: #ffffff;
+  color: #ffa127;
 }
 
 .banner__title::before {
@@ -16432,7 +16446,6 @@ blockquote .inner-content .user-name:before {
 /* ---Swiper Arrow--- */
 .swiper-button-next, .swiper-button-prev {
   background-color: transparent;
-  border: 1px solid #ffa127;
   width: 50px;
   height: 50px;
   line-height: 50px;
@@ -16453,8 +16466,6 @@ blockquote .inner-content .user-name:before {
 }
 
 .swiper-button-next:hover, .swiper-button-prev:hover {
-  background-color: #fff;
-  border-color: #fff;
   color: #000;
 }
 
@@ -16479,8 +16490,6 @@ blockquote .inner-content .user-name:before {
 }
 
 .swiper-arrow.with-radius .swiper-button-next:hover, .swiper-arrow.with-radius .swiper-button-prev:hover {
-  background-color: #ffa127;
-  border-color: #ffa127;
   color: #fff;
 }
 

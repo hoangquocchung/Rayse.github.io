@@ -145,7 +145,10 @@
 			slidesPerView: 6,
 			spaceBetween: 30,
 			loop: true,
-			
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
 			breakpoints: {
 				320: {
 				  slidesPerView: 1,
@@ -171,10 +174,10 @@
 			slidesPerView: 3,
 			spaceBetween: 30,
 			loop: false,
-			// navigation: {
-			// 	nextEl: '.swiper-button-next',
-			// 	prevEl: '.swiper-button-prev',
-			// },
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
 			breakpoints: {
 				320: {
 					slidesPerView: 1,
@@ -246,7 +249,7 @@
 				320: {
 				  slidesPerView: 1,
 				},
-				768: {
+				576: {
 				  slidesPerView: 2,
 				},
 				920:{
