@@ -17310,7 +17310,7 @@ blockquote .inner-content .user-name:before {
 .product-tab-style-2 li.nav-item a {
   background-color: #010101;
   border-radius: 0;
-  font-size: 14px;
+  font-size: 16px;
   color: #fff;
 }
 
@@ -17556,7 +17556,7 @@ blockquote .inner-content .user-name:before {
 
 .product-tab-content .short-desc {
   color: #505050;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 29px;
 }
 
@@ -17722,12 +17722,12 @@ blockquote .inner-content .user-name:before {
 }
 
 .single-product-content .rating-box-wrap .review-status span {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .single-product-content .short-desc {
   color: #505050;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 29px;
 }
 
@@ -18468,7 +18468,7 @@ blockquote .inner-content .user-name:before {
 .breadcrumb-item ul li {
   display: inline-block;
   line-height: 30px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .breadcrumb-item ul li i {

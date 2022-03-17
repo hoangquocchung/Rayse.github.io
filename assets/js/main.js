@@ -648,18 +648,24 @@
 /*----------------------------------------*/
 	var sliderrange = $('#slider-range');
 	var amountprice = $('#amount');
+	var maxprice = $('#maxprice');
+	var minptice = $('#minprice');
 	$(function () {
 		sliderrange.slider({
 			range: true,
-			min: 10,
-			max: 850,
+			min: 0,
+			max: 5000000,
 			step: 10,
-			values: [0, 1000],
+			values: [0, 5000000],
 			slide: function (event, ui) {
 				amountprice.val('$' + ui.values[0] + ' - $' + ui.values[1]);
+				maxprice.val(ui.values[1]);
+				minptice.val(ui.values[0])
 			}
 		});
-		amountprice.val('$' + sliderrange.slider('values', 0) + ' - $' + sliderrange.slider('values', 1));
+		amountprice.val( sliderrange.slider('values', 0) +'đ' + ' - ' + sliderrange.slider('values', 1)+'đ');
+		maxprice.val(sliderrange.slider('values', 1));
+		minptice.val(sliderrange.slider('values', 0))
 	});
 
 	/*----------------------------------------*/
