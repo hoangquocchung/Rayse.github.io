@@ -1,33 +1,47 @@
 /*----------------------------------------*/
 /*  08. Testimonial
 /*----------------------------------------*/
-.testimonial{
-    &-item{
-        .sub-title{
-            margin-bottom: 10px;
-            display: block;
-        }
-        .title{
-            font-size: 36px;
-        }
-        .short-desc{
-            font-family: 'Playfair Display', serif;
-            font-style: italic;
-            font-size: 18px;
-            line-height: 32px;
-        }
-        .user{
-            &-info{
-                display: flex;
-                align-items: center;
-            }
-            &-content{
-                padding-left: 20px;
-            }
-            &-name{
-                text-transform: uppercase;
-                display: block;
-            }
-        }
+.testimonial {
+  &-item {
+    .sub-title {
+      margin-bottom: 10px;
+      display: block;
     }
+    .title {
+      font-size: 36px;
+    }
+    .short-desc {
+      font-family: "Playfair Display", serif;
+      font-style: italic;
+      font-size: 18px;
+      line-height: 32px;
+    }
+    .user {
+      &-info {
+        display: flex;
+        align-items: center;
+      }
+      &-content {
+        padding-left: 20px;
+      }
+      &-name {
+        text-transform: uppercase;
+        display: block;
+      }
+    }
+  }
+}
+.countdown.countdowns {
+  display: flex;
+  justify-content: center;
+  .me-3 {
+    position: relative;
+    &::after {
+      content: ":";
+      position: absolute;
+      transform: translate(-50%, -50%);
+      right: -58%;
+      top: 50%;
+    }
+  }
 }

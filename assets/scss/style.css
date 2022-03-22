@@ -15930,6 +15930,23 @@ blockquote .inner-content .user-name:before {
   width: 100%;
 }
 
+.main-header_area.position-fixed.t {
+  background-color: #e7e7e7;
+  color: #000;
+}
+
+.main-header_area.position-fixed.t .main-nav > ul > li > a {
+  color: #000;
+}
+
+.main-header_area.position-fixed.t .header-right > ul .btn i {
+  color: #000;
+}
+
+.main-header_area.position-fixed.t .header-right > ul > li > a i {
+  color: #000;
+}
+
 .main-nav > ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17870,6 +17887,36 @@ blockquote .inner-content .user-name:before {
   width: 150px;
 }
 
+.radio-buttons .custom-radio input {
+  display: none;
+}
+
+.radio-buttons .custom-radio .radio-btn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid transparent;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.radio-buttons .custom-radio .radio-btn .hobbies-icon img {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.custom-radio input:checked + .radio-btn {
+  border: 3px solid #ffa127;
+}
+
 /*----------------------------------------*/
 /*  06. Banner
 /*----------------------------------------*/
@@ -18395,7 +18442,7 @@ blockquote .inner-content .user-name:before {
 }
 
 .testimonial-item .short-desc {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-style: italic;
   font-size: 18px;
   line-height: 32px;
@@ -18417,6 +18464,28 @@ blockquote .inner-content .user-name:before {
 .testimonial-item .user-name {
   text-transform: uppercase;
   display: block;
+}
+
+.countdown.countdowns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.countdown.countdowns .me-3 {
+  position: relative;
+}
+
+.countdown.countdowns .me-3::after {
+  content: ":";
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  right: -58%;
+  top: 50%;
 }
 
 /*----------------------------------------*/

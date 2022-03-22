@@ -117,6 +117,33 @@
   &-header_area {
     z-index: 99;
     width: 100%;
+    &.position-fixed.t {
+      background-color: #e7e7e7;
+      color: #000;
+      .main-nav {
+        > ul {
+          > li {
+            > a {
+              color: #000;
+            }
+          }
+        }
+      }
+      .header-right {
+        > ul {
+          .btn i {
+            color: #000;
+          }
+          > li {
+            > a {
+              i {
+                color: #000;
+              }
+            }
+          }
+        }
+      }
+    }
   }
   &-nav {
     > ul {
