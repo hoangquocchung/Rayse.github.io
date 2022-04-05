@@ -673,7 +673,7 @@
                                     <div class="price-filter">
                                         <div id="slider-range"></div>
                                         <div class="price-slider-amount">
-                                            <button class="btn btn-primary btn-secondary-hover">Filter</button>
+                                            <button class="btn btn-primary btn-secondary-hover ct">Filter</button>
                                             <div class="label-input position-relative">
                                                 <label>price : </label>
                                                 <input type="text" id="amount" name="price" placeholder="Add Your Price" />
@@ -714,7 +714,7 @@
                                         </ul> -->
                                         <div class="radio-buttons">
                                             <label class="custom-radio">
-                                              <input type="checkbox">
+                                              <input type="checkbox" class="chkproperty" name="do" value="do">
                                               <span class="radio-btn">
                                                 <div class="hobbies-icon">
                                                     <img src="/assets/images/logo/16467051665b3d11e1db2b67d153fb1eac53b5a8f2.jpg" alt="">
@@ -722,15 +722,15 @@
                                               </span>
                                             </label>
                                             <label class="custom-radio">
-                                              <input type="checkbox">
-                                              <span class="radio-btn">
+                                              <input type="checkbox" class="chkproperty" name="vang" value="vang">
+                                              <span class="radio-btn" >
                                                 <div class="hobbies-icon">
                                                     <img src="/assets/images/logo/vang.jpg" alt="">
                                                 </div>
                                               </span>
                                             </label>
                                             <label class="custom-radio">
-                                              <input type="checkbox" >
+                                              <input type="checkbox" class="chkproperty" name="xam" value="xam">
                                               <span class="radio-btn">
                                                 <div class="hobbies-icon">
                                                     <img src="/assets/images/logo/xam.jpg" alt="">
@@ -745,6 +745,7 @@
                                               </span>
                                             </label>
                                           </div>
+                                          <input type="text" id="t" value=""/>
                                     </div>
                                 </div>
                                 <div class="widgets-area mb-9">
@@ -1809,8 +1810,31 @@
                     $('.main-nav > ul > li > a,.header-right > ul > li > a i,.header-right > ul .btn i,.header-right > ul > li > a i').removeClass('col');
                 }
             });
-                
         });
+        $(document).ready(function () {
+
+            var selected = [];
+            $('.chkproperty').change(function () {
+                if($(this).prop("checked") == true){
+                        selected.push($(this).val())
+                        console.log(selected)
+                        $('#t').val(selected)
+                }
+                else{
+                    selected.forEach((element,index) => {
+                        if($(this).val() == element){
+                            selected.splice(index,1);
+                            console.log(selected)
+                            $('#t').val(selected)
+                        }
+                    });
+                }
+                $(".ct").click()
+                
+            });
+                $(".ct").on('click',function() {alert("Change detected!");});
+        });
+        
     </script>
 </body>
 

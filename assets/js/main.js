@@ -614,7 +614,7 @@
 
 	$offcanvasNavSubMenu.slideUp();
 
-	$offcanvasNav.on('click', 'a.t, li .menu-expand', function (e) {
+	$offcanvasNav.on('click', 'a, li .menu-expand', function (e) {
 		var $this = $(this);
 		if (
 			$this.parent().attr('class').match(/\b(menu-item-has-children|has-children|has-sub-menu)\b/) &&
@@ -672,7 +672,7 @@
 	/*  QTY Button
 /*----------------------------------------*/
 	$('.cart-plus-minus').append(
-		'<div class="dec qtybutton"><i class="fa fa-minus"></i></div><div class="inc qtybutton"><i class="fa fa-plus"></i></div>'
+		'<div class="dec qtybutton qt-minus"><i class="fa fa-minus"></i></div><div class="inc qtybutton qt-plus"><i class="fa fa-plus"></i></div>'
 	);
 	$('.qtybutton').on('click', function () {
 		var $button = $(this);
